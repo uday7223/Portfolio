@@ -23,15 +23,16 @@ header{
     padding:10px 0px;
     font-weight: 600;
     width: 100%;
-    border-bottom: 1px solid gray;
     position:fixed;
     z-index: 1000;
     top: 0px;
     transition: 1s ease-in-out;
+    color: white !important;
 
-    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
+    background: black;
 
-}
+}   
 header  a:hover {
     transform: scale(1.05);
     
@@ -51,7 +52,7 @@ header a img{
 header a img:hover{
     
     transform:scale(1.02);
-    box-shadow:1px 1px 15px 0px #112D4E;
+    box-shadow:1px 1px 14px 0px white;
 
 
 }
@@ -72,18 +73,25 @@ header .head-left, .head-right{
     flex-wrap: wrap;
 
 
+
+
 }
 
 
-header .head-right ul {
+header .head-right ul, .anchor {
     display: flex;
     gap: 6rem;
     list-style: none;
+    text-decoration: none;  
+
 }
 
 
 header .head-right ul li a{
-    text-decoration: none;   
+    text-decoration: none;  
+    color: white !important;
+
+     
 
                 /* color: white; */
   
@@ -93,9 +101,7 @@ header .head-right ul li a{
 
 header .head-left:hover, .head-right ul li a:hover{
     text-decoration:wavy;        
-                /* color: white; */
-                color: #E72929;
-                /* color: #A27B5C; */
+    color: yellow !important;
   
 }
 
@@ -163,6 +169,8 @@ header .head-left:hover, .head-right ul li a:hover{
     transition: transform 0.1s ease-out;
     letter-spacing: 5px;
     margin-top: 20px !important;
+    margin: 8px;
+
 
 }
 
@@ -173,7 +181,7 @@ header .head-left:hover, .head-right ul li a:hover{
     margin-bottom: 20px !important;
 
 }
-button:hover{
+button:hover, .anchor:hover{
     background-color: #112d4ee5;
     cursor: pointer;
     transform: translateY(-2px);
@@ -288,7 +296,7 @@ font-weight:700 ;
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
-    margin: 50px 0px 100px 0px;
+    margin: 50px 0px 50px 0px;
 }
 
 .project .details{
@@ -314,8 +322,11 @@ font-weight:700 ;
 }
 
 .project img{
-    width: 600px;
-    height: 350px;
+    width: 33rem;
+    height: 18rem;
+    /* border: 1px solid black; */
+    box-shadow: 1px 1px 18px 3px  lightgreen;
+    margin-top:25px;
 
 }
 
@@ -344,7 +355,7 @@ font-weight:700 ;
     border: none;
     border-bottom: 1px solid rgb(6, 6, 6);
     margin-bottom:40px ;
-    color: white;
+    color: Black;
     padding: 0px 15px;
 
 }
@@ -414,4 +425,11 @@ footer .con2 .bg-1-social .social{
     margin: 0px 10px;
 }
 
+.anchor{
+    text-align: center !important;
+    display: flex ;
+    justify-content: center;
+    align-items: center
 
+    
+}
